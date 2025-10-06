@@ -5,23 +5,27 @@ Created on Sun Oct  5 06:30:47 2025
 @author: Admin
 """
 
-names = ["john", "paul", "george", "ringo"]
 
-for i, x in enumerate(names):
-    print(i, x)
+L = [5, 6, 7, 8]
+
+s = 'xylophone'
+
+if 'ph' in s:
+    print("I found ph")
     
-n = ["john", "paul", "george", "ringo"]
-n1 = ["lennon", "mccartney", "harrison", "starr"]
-instr = ["guitar", "bass", "guitar", "drums"]
+s = {6, 5, 10}
+s.add(7)
+print(s)
+print(5 in s)
 
-for (x, y, z) in zip(n, n1, instr):
-    print(x, y, z)
+d = {"name": "Bob"}
+d["name"] = "Michael"
+d["age"] = 46
+print(d)
+print("name" in d)
+print("Fred" in d)
+print(d["job"])
 
-for i, x in enumerate(zip(n, n1, instr)):
-    print(i, x)
-
-for i, (a, b, instr) in enumerate(zip(n, n1, instr)):
-    print("%d: %s %s, %s" % (i, a, b, instr))
 
     
     
